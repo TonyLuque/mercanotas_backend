@@ -24,7 +24,9 @@ deploy:
     provider: heroku
     skip-cleanup: true
     keep-history: true
-    api_key: 0974ee04-82a5-4897-85ee-4a86b3f45be4
+    api_key: 
+      secure: "lOPO+K1gqEbGnXrSiZcOx9jztZDv7A9mJMa1cPe4n4O+0MHtijYyTsiEcctFSRraK2nZGhVoZdgcbbuIULvLDo/v9d/lDJtFL7sDy3Qy03uZ+zsXDxDj3BKFwIJ7z60oI8F7xC8rRPiUm6qHipZ94wVAni7VsIIL1OZXOUWJH0C7A7cKWwO/O6WjFet1V2qpdQnthYeNS2WwKY/NDI7nu+e9GxftJ3fa5Ko/uq/0lb4BL0XyGyMupbd7ANKLWOMZGzUr9Yl9nU2ZGdrCf9VVvmjdZX8rd8W9n0oYBDPh4Gy992C+TSUzd8X4YZyh/40bRuhXp9j1nf2qpVOjdXLkZymFTJyOwJOAHEpUkL4UUrJP2GbvxUKu4KhYCq6spAucgdskn5g42EkhnafHpCAlA22RIq7ArTJUkMKHlOWLeLAeTk56I8Xrg+jyr1O5YEbfxQX+AvUQdHcqATxAPfKf5P1T6rRp+mBh7CMiD9K2GxMESbeN/jNfomzcgCI6NxZ4B2plU9QtSSKxeRYGTKO1ySc9PKmhUcjauB7B2biEnMKBx0wftML2/KHl+OoN3JtRBTDhdsmklmOABtfkCtUyxRL+b5VctZ9M0U91bfxZoE4iuHYRYZSVVSH8Hm+bnDZBg3dabIBf3E6HhB//LYtiO3QsHNk/niqPASVFHvlgRzM="
+
     app: mercanotas-backend
     on:
-        repo: TonyLuque/mercanotas_backend
+      repo: TonyLuque/mercanotas_backend
