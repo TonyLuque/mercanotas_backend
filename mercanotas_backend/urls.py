@@ -21,5 +21,5 @@ def hola(request):
     return HttpResponse('Si corre')
 
 urlpatterns = [
-    path('hola-tony/', hola),
+    path('/', hola),
 ]
