@@ -3,3 +3,4 @@ django>=3.0.7
 
 # Django REST framework
 djangorestframework>3.9.1
+django-heroku
