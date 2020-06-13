@@ -18,7 +18,7 @@ from django.urls import path
 from django.http import HttpResponse
 
 def hola(request):
-    return HttpResponse('Si corre el nuevo juy')
+    return HttpResponse('Hola Beto como vas? \n si te llego el correo?')
 
 def prueba1(request):
     return HttpResponse('la otra url Si corre Juy !!!!!!!!!!!!!!!!!!!! :D')
