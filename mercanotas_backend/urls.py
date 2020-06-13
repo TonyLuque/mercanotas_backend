@@ -18,7 +18,7 @@ from django.urls import path
 from django.http import HttpResponse
 
 def hola(request):
-    return HttpResponse('Si corre')
+    return HttpResponse('Si corre el nuevo juy')
 
 urlpatterns = [
     path('', hola),
