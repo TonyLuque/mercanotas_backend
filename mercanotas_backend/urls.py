@@ -20,6 +20,10 @@ from django.http import HttpResponse
 def hola(request):
     return HttpResponse('Si corre el nuevo juy')
 
+def prueba1(request):
+    return HttpResponse('la otra url Si corre Juy !!!!!!!!!!!!!!!!!!!! :D')
+
 urlpatterns = [
     path('', hola),
+    path('prueb1/', prueba1),
 ]
