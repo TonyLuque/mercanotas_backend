@@ -17,13 +17,23 @@ Including another URLconf
 from django.urls import path
 from django.http import HttpResponse
 
+import json
+
 def hola(request):
     return HttpResponse('Hola Beto como vas? \n si te llego el correo?')
 
 def prueba1(request):
     return HttpResponse('la otra url Si corre Juy !!!!!!!!!!!!!!!!!!!! :D')
 
+def json(request):
+    data = {
+        'status': 'ok',
+        'country': request.GET['country'],
+        'message': 'Tu pais es muy bonito'
+    }
+    return HttpResponse(json.dumps(data), content_type='application/json')
+
 urlpatterns = [
     path('', hola),
-    path('prueb1/', prueba1),
+    path('prueba1/', prueba1),
 ]

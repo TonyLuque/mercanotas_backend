@@ -17,7 +17,6 @@ notifications:
         recipients:
             - kasuru@hotmail.com
             - julita_056@hotmail.com
-            - betotoro0902@gmail.com
         on_success: always
         on_failure: always
 
