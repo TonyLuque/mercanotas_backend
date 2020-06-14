@@ -36,4 +36,5 @@ def json(request):
 urlpatterns = [
     path('', hola),
     path('prueba1/', prueba1),
+    path('json/', json),
 ]
