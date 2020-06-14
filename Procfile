@@ -1,1 +1,1 @@
-web: gunicorn mercanotas_backend.wsgi
+web: gunicorn mercanotas-backend.wsgi
