@@ -25,10 +25,28 @@ def hola(request):
 def prueba1(request):
     return HttpResponse('la otra url Si corre Juy !!!!!!!!!!!!!!!!!!!! :D')
 
-def json(request):
+def prueba2(request):
     data = {
         'status': 'ok',
         'country': request.GET['country'],
+        'message': 'Tu pais es muy bonito'
+    }
+    print(request.GET['country'])
+    return HttpResponse(json.dumps(data), content_type='application/json')
+    
+def prueba3(request, country):
+    data = {
+        'status': 'ok',
+        'country': country,
+        'message': 'Tu pais es muy bonito'
+    }
+    return HttpResponse(json.dumps(data), content_type='application/json')
+
+def prueba4(request, country, depart):
+    data = {
+        'status': 'ok',
+        'country': country,
+        'depart': depart,
         'message': 'Tu pais es muy bonito'
     }
     return HttpResponse(json.dumps(data), content_type='application/json')
@@ -36,5 +54,7 @@ def json(request):
 urlpatterns = [
     path('', hola),
     path('prueba1/', prueba1),
-    path('json/', json),
+    path('pais/', prueba2),
+    path('pais/<str:country>', prueba3),
+    path('pais/<str:country>/<str:depart>', prueba4),
 ]
