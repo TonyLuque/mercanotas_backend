@@ -19,6 +19,8 @@ from django.http import HttpResponse
 
 import json
 
+from colombia import views as colombia_views
+
 def hola(request):
     return HttpResponse('Hola Beto como vas? \n si te llego el correo?')
 
@@ -57,4 +59,7 @@ urlpatterns = [
     path('pais/', prueba2),
     path('pais/<str:country>', prueba3),
     path('pais/<str:country>/<str:depart>', prueba4),
+
+    path('colombia/', colombia_views.list_cities),
+    path('colombia/<str:city>', colombia_views.view_city),
 ]
