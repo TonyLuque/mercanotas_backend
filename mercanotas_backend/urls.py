@@ -20,7 +20,7 @@ from django.http import HttpResponse
 import json
 
 def hola(request):
-    return HttpResponse("""<h1>Hola soy un HTML</h1>""")
+    return HttpResponse("<h1>Hola soy un HTML</h1>")
 
 urlpatterns = [
     path('', hola),
