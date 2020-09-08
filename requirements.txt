@@ -1,4 +1,6 @@
 # Django
 django
 
+whitenoise
+
 gunicorn
